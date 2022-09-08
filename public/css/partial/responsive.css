@@ -1,0 +1,62 @@
+@media only screen and (max-width:500px) {  
+    
+    .header_area{
+        margin-bottom:6rem;
+    }  
+    .site-main .site-banner h1{
+        font-size: 40px;
+    }
+    .about-area{
+        padding:4rem 3rem !important;
+    }
+    .site-main .subscribe-me-area .subscribe{
+        margin-top: 0;
+    }
+    .footer-area{
+        padding:3rem 0 !important;
+    }
+    .site-main .subscribe-me-area .subscribe form
+     .input-text input{
+            width: 13rem;
+            margin-left: -40px;
+            margin-bottom: 10px;
+    }
+    .services-area .container{
+        margin-left:0rem;
+    }
+  
+}
+@media only screen and (max-width:700px){
+    .header_area{
+        margin-bottom:6rem;
+    }  
+    .header_area .main_menu .navbar{
+        padding:1rem;
+    }
+    .header_area .main_menu .navbar .container-fluid .navbar-brand {
+        
+        margin-left: -13px;
+    }
+    .site-main .about-area h2>span{
+        font-size:31px;
+        letter-spacing: 10px;
+    }
+   .contact_me a{
+    font-size: 14px;
+   }
+   .contact_me span{
+    font-size: 10px;
+   }
+    .site-main .services-area{
+        padding-left:0;
+        padding-right:0;
+        
+    }
+
+    .hire_me{
+        padding:2rem;
+        margin:0rem;
+    }
+  
+   
+}

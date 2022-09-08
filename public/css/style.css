@@ -1,0 +1,246 @@
+
+@import url(./partial/global.css);
+
+:root{
+    --primary-color:#4458dc;
+    --primary-color2:#854fee;
+    --title-color:#141313;
+    --text-color:#777777;
+    --border-color:#201f1f17;
+    --gradient-color:linear-gradient(90deg,#4458dc 0%,#854fee 100%);
+    --shadow-color:0px 10px 30px rgba(118,85,225,0.3);
+    --box-shadow:0px 10px 30px rgba(57,56,61,0.205);
+    
+}
+/* styling navigation menu */
+
+.header_area .main_menu .navbar{
+    padding:0rem 10rem;
+}
+.header_area .main_menu .navbar .container-fluid .navbar-brand{
+    /* padding:0 1.5rem 0 2rem; */
+    margin-left: -40px;
+}
+.header_area .main_menu .navbar .nav-item .nav-link{
+    font-size:15px;
+    font-family:'Roboto', sans-serif;;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding:1.7rem;
+    color:var(--title-color);
+}
+.header_area .main_menu .navbar .active{
+      background-image: var(--gradient-color);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+}
+.header_area .main_menu .navbar  a:hover{
+      background-image: var(--gradient-color);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+     background-clip:text;
+}
+/* end of head area...... */
+
+/* starting main area */
+.site-main{
+    margin-top:8%;
+}
+/* start of banner area------------ */
+.site-banner .container .row .site-title{
+    padding-left:5%;
+    padding-top:5%;
+    font-weight: 500;
+}
+.site-banner .container .row .site-title h3::after{
+    margin-left:5%;
+    content:"";
+    width:60%;
+    height:2px;
+    background: black;
+    display: inline-block;
+    transform:translateY(-5px);
+}
+.site-main .site-banner .title-text{
+    font-family: 'Roboto', sans-serif;;
+}
+.site-main .site-banner h1{
+    font-size:5rem;
+}
+/* end of banner area------------ */
+
+/* start of about area------------ */
+.site-main .about-area{
+    padding:8rem 5rem
+}
+.site-main .about-area h2>span{
+    display:block;
+    font-family:'Roboto', sans-serif;;
+    font-size:49px;
+    line-height: 1;
+    letter-spacing: 21px;
+}
+/* end of about area--------------- */
+
+/* start of call area------------------ */
+.contact_me{
+    display:inline-block;
+    position: fixed;
+    bottom:10px;
+    right:10px;
+    
+}
+.contact_me a{
+    cursor:default;
+}
+
+
+/* end of call area--------------------- */
+
+/* start of services area----------------- */
+.site-main .services-area{
+    padding: 4rem 7rem;
+}
+.site-main .services-area  .services{
+    background-color: rgba(255, 254, 225, 0.973);
+    transition:box-shadow .7s ease;
+}
+.site-main .services-area  .services:hover{
+    box-shadow: var(--box-shadow);
+}
+.site-main .services-area  .services .card-text{
+    width:60%;
+    margin:auto;
+}
+
+
+
+
+/* end of services area----------------- */
+
+
+/* about me area======================= */
+.site-main .my-work{
+    padding:3rem 0;
+}
+.site-main .my-work .carousel-inner{
+    padding:3rem 0;
+    height:250px;
+}
+.site-main .my-work .carousel-inner .my-container{
+    display:flex;
+    max-width:600px;
+    margin:auto;
+    background-color: #f1efeb;
+    border-radius:5%;
+}
+.site-main .my-work .carousel-inner .my-container .my-col{
+    padding:20px 20px;
+}
+.site-main .my-work .carousel-inner .my-container .my-col img{
+    border-radius: 30px;
+    margin-top:10px;
+}
+
+
+
+/* end of about me area================== */
+
+
+
+/* subscribe-me======================== */
+.site-main .subscribe-me-area{
+    padding:0 17%;
+}
+.site-main .subscribe-me-area .subscribe{
+    background-image: var(--gradient-color);
+    margin:3rem auto;
+    padding:8rem 0;
+    border-radius: 10px;
+}
+.site-main .subscribe-me-area .subscribe h4{
+    font:normal 700 30px/30px 'Roboto', sans-serif;;
+    color:whitesmoke;
+
+}
+.site-main .subscribe-me-area .subscribe p{
+    color:white;
+    padding:1rem 4rem;
+}
+.site-main .subscribe-me-area .subscribe form .input-text input{
+    width:300px; 
+    border:1px solid whitesmoke;
+    background-color: transparent;
+    color:white;
+    font:'Roboto', sans-serif;;
+}
+.site-main .subscribe-me-area .subscribe form .input-text input::placeholder{
+    color:white;
+}
+.site-main .subscribe-me-area .subscribe form button{
+    background-color: whitesmoke;
+    color:black;
+}
+.site-main .subscribe-me-area .subscribe form button:hover{
+    background-color: black;
+    color:whitesmoke;
+}
+
+/* end of subscribe me======================== */
+
+
+/* footer area========================== */
+.site-main .footer-area{
+    padding:5rem 0;
+}
+.site-main .footer-area .social h5{
+    font:normal 500 23px/30px 'Roboto', sans-serif;;
+    color:var(--primary-color);
+}
+.site-main .footer-area .social a i{
+    font-size:22px;
+    padding:1rem;
+    color:var(--border-color);
+}
+.site-main .footer-area .social a i:hover{
+    color:var(--primary-color);
+}
+
+/* end of footer area================== */
+
+
+/* hire me=============================== */
+.hire_me{
+    padding:3rem;
+    margin:2rem;
+}
+.hire_me h1{
+    margin-left:2rem;
+    background-image: var(--gradient-color);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+     background-clip:text;
+}
+.hire_me input{
+    border:none;
+    border-radius:3%;
+    height: 50%;
+    width: 100%;
+    margin:2rem;
+}
+
+.hire_me textarea{
+    border:none;
+    border-radius:3%;
+    width:100%;
+    height:80%;
+    margin:2rem;
+}
+.hire_me button{
+    margin:2rem;
+}
+
+
+
+/* end of hire me======================== */

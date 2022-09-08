@@ -1,0 +1,94 @@
+.button{
+    padding:0.5rem 2rem;
+    border:3px solid transparent;
+    border-radius: 10px;
+    font:var(--roboto);
+    font-weight: 500;
+    margin:3%;
+    margin-left:0;
+    position: relative;
+}
+.primary-button{
+    background: var(--gradient-color);
+    color:whitesmoke;
+    transition:background-color .6s ease;
+    box-shadow: var(--box-shadow);
+}
+.primary-button:hover{
+    color:black;
+    background: whitesmoke;
+    background-clip: padding-box;
+    border-color: transparent;
+}
+.primary-button::after{
+    content:'';
+    position:absolute;
+    top:-2px;
+    left:-2px;
+    right:-2px;
+    bottom:-2px;
+    background:var(--gradient-color);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.secondary-button{
+    background-color: white;
+    background-clip: padding-box;
+    color:black;
+    transition:background-color 0.5s ease;
+}
+.secondary-button::after{
+    content:'';
+    position:absolute;
+    top:-2px;
+    left:-2px;
+    right:-2px;
+    bottom:-2px;
+    background:var(--gradient-color);
+    border-radius: 10px;
+    z-index: -1;
+}
+.secondary-button:hover{
+    background: var(--gradient-color);
+    color:whitesmoke;
+    transition:0.5s;
+}
+p.para{
+    color:var(--text-color);
+    font-size: 1rem;
+    font-family: var(--roboto);
+    font-weight: 500;
+    padding:4rem o;
+
+}
+.font-roboto{
+    font-family: var(--roboto);
+}
+button:active,
+button:focus,
+button:hover,
+.btn:active,
+.btn.active{
+    outline:0px !important;
+    box-shadow: none !important;
+}
+.title-h1{
+    font:normal bold 39px/40px var(--roboto);
+}
+img{
+    max-height:500px;
+    max-width:500px;
+}
+.navbar_fixed{
+  
+    position:fixed;
+    top:0;
+    left:0;
+    right:0; 
+    width: 100%;
+    z-index: 999;
+    background:green !important;
+    box-shadow: var(--box-shadow);
+    transition:background-color 0.5d ease;
+}
