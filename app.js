@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express=require("express");
 const app=express();
+const path=require("path");
 const mongoose=require('mongoose');
 const bodyParser=require('body-parser');
 
@@ -59,6 +60,9 @@ app.post('/getHired',function(req,res){
     res.redirect('/');
 
 })
+app.get('/resume',function(req,res){
+    res.sendFile(__dirname+"/resource/Resume.pdf");
+});
 let port = process.env.PORT;
 if (port == null || port == "") {
   port = 3000;
